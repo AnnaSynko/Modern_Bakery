@@ -1,0 +1,45 @@
+/*Button*/
+.button {
+    display: block;
+    padding: 10px 24px;
+    color: var(--color-primary-light);
+    font-weight: 600;
+    background-color: var(--color-brand-normal);
+    border: 2px solid var(--color-brand-normal);
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--color-brand-dark);
+        background-color: var(--color-primary-light)
+    }
+    
+    @media screen and (min-width: $bp-tablet){
+        padding: 16px 32px;
+    }
+    &__close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+         fill: transparent;
+        stroke: var(--color-primary-dark);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+
+/* .button:focus {
+    color: #465929;
+    background-color: greenyellow;
+}
+
+.button:active {    /*при натисканні кнопки
+    color: black;
+    background-color: brown;
+} */
